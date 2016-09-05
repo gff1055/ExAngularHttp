@@ -1,8 +1,9 @@
 <h2>DJS DE HOUSE</h2>
 
-<button ng-click = "listingDjsHouse()">Listar Djs</button>
+<button ng-click = "listingDjsHouse()">Listar Djs House</button>
+<h2 ng-show = "djsHouse.length>0"></h2>
 <ul>
-<!--	<li ng-repeat = "indexDjsHouse in djsHouse">
-		{{indexDjsHouse.id}}.: {{indexDjsHouse.nome}} - {{indexDjsHouse.musica}}
-	</li> -->
+	<li ng-repeat = "indexDjsHouse in djsHouse">
+		{{indexDjsHouse.id}}: {{indexDjsHouse.nome}} - {{indexDjsHouse.musica}}
+	</li>
 </ul>

@@ -1,8 +1,13 @@
 <h2>DJS DE HOUSE</h2>
 
-<button ng-click = "listingDjsHouse()">Listar Djs</button>
+<!-- Chamando o metodo listingDjsHouse do script “app.js” ao clicar no botao -->
+<button ng-click = "listingDjsHouse()">Listar Djs House</button>
+
+<h2 ng-show = "djsHouse.length>0"></h2>
+
 <ul>
+	<!-- A lista json é percorrida usando o ng-repeat associado a variável “indexDjsHouse”-->
 	<li ng-repeat = "indexDjsHouse in djsHouse">
-		{{indexDjsHouse.id}}.: {{indexDjsHouse.nome}} - {{indexDjsHouse.musica}}
+		{{indexDjsHouse.id}}: {{indexDjsHouse.nome}} - {{indexDjsHouse.musica}}
 	</li>
 </ul>

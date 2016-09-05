@@ -1,0 +1,9 @@
+<h2>DJS DE HOUSE</h2>
+
+<button ng-click = "listingDjsTrance()">Listar Djs Trance</button>
+<h2 ng-show = "djsTrance.length>0"></h2>
+<ul>
+	<li ng-repeat = "indexDjsTrance in djsTrance">
+		{{indexDjsTrance.id}}: {{indexDjsTrance.nome}} - {{indexDjsTrance.musica}}
+	</li>
+</ul>

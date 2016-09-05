@@ -9,12 +9,12 @@ app.config(['$routeProvider', function($routeProvider){
 app.controller('houseController', function($scope, $http){
 	$scope.djsHouse = Array();
 	$scope.listingDjsHouse = function(){
-		$http.get("listDjsHouse.html").success(function($data)){
-			$scope.djsHouse = data.djsHouse;
+		$http.get("listDjsHouse.html").success(function(dado){
+			$scope.djsHouse = dado.djsHouse;
 			console.log($scope.djsHouse);
-		}).error(function($data){
+		}).error(function(dado){
 			alert("ERRO...");
-			console.log($data);
+			console.log(dado);
 		});
 			
 	}
