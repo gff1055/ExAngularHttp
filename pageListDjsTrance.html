@@ -1,13 +1,17 @@
-<h2>DJS DE HOUSE</h2>
+<h2>DJS DE TRANCE</h2>
 
 <!-- Chamando o metodo listingDjsTrance do script “app.js” ao clicar no botao -->
 <button ng-click = "listingDjsTrance()">Listar Djs Trance</button>
 
-
 <h2 ng-show = "djsTrance.length>0"></h2>
+
 <ul>
+
 	<!-- A lista json é percorrida usando o ng-repeat associado a variável “indexDjsTrance”-->
 	<li ng-repeat = "indexDjsTrance in djsTrance">
+	
+		<!-- Organizacao da Massa de dados vindos da lista-->
 		{{indexDjsTrance.id}}: {{indexDjsTrance.nome}} - {{indexDjsTrance.musica}}
+		
 	</li>
 </ul>

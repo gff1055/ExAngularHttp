@@ -6,7 +6,9 @@
 	</head>
 
 	<body>
-		<h1>EU ESTOU AQUI</h1>
+		<h1>Selecione categoria</h1>
+		<a href = "#/house">Djs de House</a><br>
+		<a href = "#/trance">Djs de Trance</a><br>
 		<div ng-view></div>
 	</body>
 </html>
